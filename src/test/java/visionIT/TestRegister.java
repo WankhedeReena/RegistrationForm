@@ -15,7 +15,9 @@ public class TestRegister {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		
 		driver.get("http://demo.automationtesting.in//Register.html");
+		
 		driver.findElement(By.xpath("//input[@ng-model='FirstName']")).sendKeys("Reena");
 		driver.findElement(By.xpath("//input[@ng-model='LastName']")).sendKeys("Wankhede");
 		driver.findElement(By.xpath("//textarea[@ng-model='Adress']")).sendKeys("Pune");
